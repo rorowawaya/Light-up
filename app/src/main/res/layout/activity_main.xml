@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/bb"
+    tools:context=".MainActivity">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="12dp"
+        android:background="@drawable/custom_edittext">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="22dp">
+
+            <TextView
+                android:id="@+id/loginText"
+                android:layout_width="288dp"
+                android:layout_height="wrap_content"
+                android:text="@string/login"
+                android:textAlignment="center"
+                android:textColor="@color/grey"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="30dp"
+                android:autofillHints="login"
+                android:background="@drawable/custom_edittext"
+                android:drawableStart="@drawable/baseline_person_24"
+                android:drawablePadding="4dp"
+                android:hint="@string/username"
+                android:padding="4dp"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/cardview_dark_background"
+                android:textColorHint="#757575"
+                tools:ignore="TextContrastCheck,TextFields,VisualLintTextFieldSize" />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="20dp"
+                android:autofillHints=""
+                android:background="@drawable/custom_edittext"
+                android:drawableStart="@drawable/baseline_lock_24"
+                android:drawablePadding="4dp"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:padding="4dp"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/cardview_dark_background"
+                android:textColorHint="#757575"
+                tools:ignore="VisualLintTextFieldSize,TextContrastCheck" />
+
+            <Button
+                android:id="@+id/loginBtn"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/grey"
+                android:onClick="go"
+                android:text="@string/login"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                app:cornerRadius="20dp"
+                tools:ignore="DuplicateSpeakableTextCheck,VisualLintButtonSize" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

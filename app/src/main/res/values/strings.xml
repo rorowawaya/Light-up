@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">light up1</string>
+    <string name="login">Login</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="not_yet_registered_signup_now">Not yet registered? SignUp Now</string>
+    <string name="loginn">Login</string>
+    <string name="read">read</string>
+    <string name="next">Next</string>
+    <string name="go">go</string>
+    <string name="go1">go</string>
+    <string name="go2">go</string>
+    <string name="go3">go</string>
+    <string name="end">End</string>
+    <string name="end3">End</string>
+</resources>
